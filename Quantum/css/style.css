@@ -1,0 +1,261 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url("/assets/Quicksand\ font\ 1/Quicksand-VariableFont_wght.ttf")
+        format("truetype");
+}
+
+.header {
+    display: flex;
+    background: #212c39;
+    justify-items: center;
+    align-self: start;
+    padding: 5px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 460px 1fr;
+    justify-content: center;
+    align-content: center;
+    background: #eeeeee;
+    padding: 20px 0;
+}
+
+body {
+    display: grid;
+    grid-auto-rows: auto;
+    margin: 0;
+    background: #eeeeee;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #eeeeee;
+    padding: 5px;
+}
+
+.footer {
+    display: flex;
+    background: #e0e1e1;
+    justify-content: center;
+    align-content: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.back > img {
+    transform: rotate(270deg);
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.welcome {
+    display: flex;
+}
+
+.welcome > .text {
+    flex: 2;
+}
+
+.form-container {
+    margin: auto;
+    grid-column: 2;
+}
+
+.form {
+    background: #ffffff;
+    border-radius: 0 0 5px 5px;
+    border-top: 5px #3ac7ec solid;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.form > div {
+    margin: 13px 10px;
+}
+
+.text {
+    text-align: center;
+    font-family: "Quicksand";
+    font-weight: 550;
+    font-size: 23px;
+}
+
+.radio {
+    display: flex;
+}
+
+.radio > div {
+    padding-right: 25px;
+    font-family: "Quicksand";
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.radio-button {
+    appearance: none;
+    border: #1f7a54 solid 1px;
+    border-radius: 10px;
+    width: 14px;
+    height: 14px;
+}
+
+.radio-button:checked {
+    background: radial-gradient(#1f7a54 50%, transparent 40%, transparent);
+    color: #1f7a54;
+}
+
+.state-district {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    border-bottom: #dfdfdf 1px solid;
+    font-family: "Quicksand";
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.state {
+    border: none;
+    font-family: "Quicksand";
+    font-size: 15px;
+    font-weight: 600;
+    appearance: none;
+    background-image: url("/assets/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    flex: 1;
+}
+
+.name {
+    color: #227c56;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.username {
+    outline: none;
+    border: none;
+    font-family: "Quicksand";
+    font-size: 15px;
+    font-weight: 600;
+    flex: 1;
+}
+
+.password {
+    border: none;
+    outline: none;
+    font-family: "Quicksand";
+    font-size: 15px;
+    font-weight: 600;
+    flex: 1;
+}
+
+.values {
+    display: flex;
+}
+
+.values > .arrow {
+    margin-left: auto;
+}
+
+.values > .place {
+    margin-top: 5px;
+}
+
+.un-pass {
+    border-bottom: 1px solid #dfdfdf;
+    font-family: "Quicksand";
+    font-size: 15px;
+    font-weight: 600;
+    color: #227c56;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+.pass > .values {
+    border-bottom: 1px solid #dfdfdf;
+    font-family: "Quicksand";
+    font-size: 15px;
+    font-weight: 600;
+    color: #227c56;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+.forgot {
+    margin-left: 250px;
+    margin-top: 5px;
+    font-family: "Quicksand";
+    font-size: 13px;
+    font-weight: 600;
+    color: #227c56;
+}
+
+.remember {
+    display: flex;
+    font-family: "Quicksand";
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.cb {
+    appearance: none;
+}
+
+.cb:checked + label > img {
+    background: url("/assets/icons/checkbox-checked.svg");
+}
+
+.cb-label {
+    display: flex;
+    align-items: center;
+}
+
+.cb-label > * {
+    margin-right: 5px;
+}
+
+.log-in-button {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    background-color: #3fd28b;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    font-family: "Quicksand";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact > div {
+    padding: 0 5px;
+    margin: 5px 0;
+    font-family: "Quicksand";
+    font-weight: 500;
+    font-size: 13px;
+    color: #227c56;
+}
+
+.footer > div {
+    font-family: "Quicksand";
+    font-weight: 500;
+    font-size: 12px;
+    color: #227c56;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.copyright {
+    padding-top: 5px;
+}

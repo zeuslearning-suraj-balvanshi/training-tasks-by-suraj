@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF_8" />
+        <title>Quantum</title>
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="header">
+            <img src="assets\icons\logo used in header.svg" alt="Logo" />
+        </div>
+        <!-- nav and logo-->
+        <div class="main">
+            <div class="form-container">
+                <form class="form" action="">
+                    <div class="welcome">
+                        <div class="back">
+                            <img src="assets\icons\sort.svg" alt="back" />
+                        </div>
+                        <div class="text">Log in with Quantum</div>
+                        <!-- log in with Quantum-->
+                    </div>
+                    <!-- welcome-->
+                    <div class="radio">
+                        <div>
+                            <input
+                                type="radio"
+                                name="radio"
+                                class="radio-button"
+                            />
+                            <span class="radio-mark"></span>
+                            District
+                        </div>
+                        <!-- district-->
+                        <div>
+                            <input
+                                type="radio"
+                                name="radio"
+                                class="radio-button"
+                            />
+                            <span class="radio-mark"></span>
+                            Independent School
+                        </div>
+                        <!-- independent school-->
+                    </div>
+                    <!-- radio-->
+                    <div class="state-district">
+                        <div class="name">State*</div>
+                        <div class="values">
+                            <select required class="state" name="State">
+                                <option value="" selected>Select State</option>
+                                <option value="Alabama">Alabama</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- state-->
+                    <div class="state-district">
+                        <div class="name">District*</div>
+                        <div class="values">
+                            <select required class="state" name="State">
+                                <option value="" selected>
+                                    Select District
+                                </option>
+                                <option value="alabama-state-district">
+                                    Alabama State District
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- district-->
+                    <div class="un">
+                        <div class="un-pass">
+                            <input
+                                type="text"
+                                class="username"
+                                placeholder="Username/Email ID*"
+                                required
+                                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$ | ^[A-Za-z0-9]$+"
+                            />
+                        </div>
+                        <div class="forgot">FORGOT USERNAME?</div>
+                    </div>
+                    <!-- UN-->
+                    <div class="pass">
+                        <div class="values">
+                            <input
+                                type="password"
+                                class="password"
+                                placeholder="Password*"
+                                required
+                                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"
+                            />
+                            <div class="arrow">
+                                <img src="assets\icons\preview.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="forgot">FORGOT PASSWORD?</div>
+                    </div>
+                    <!-- password-->
+                    <div class="remember">
+                        <input
+                            type="checkbox"
+                            id="remember-me"
+                            class="cb"
+                            value="remember"
+                        />
+                        <label for="remember-me" class="cb-label">
+                            <img src="/assets/icons/checkbox-unchecked.svg" />
+                            <span>Remember Me</span>
+                        </label>
+                    </div>
+                    <!-- remember me-->
+                    <div class="log-in-button">
+                        <div>
+                            <input
+                                type="submit"
+                                class="button"
+                                value="LOG IN"
+                            />
+                        </div>
+                    </div>
+                    <!-- login button-->
+                </form>
+            </div>
+            <!-- form-->
+        </div>
+        <!-- main-->
+        <div class="contact">
+            <div class="about">About</div>
+            <div>|</div>
+            <div>Contact Us</div>
+        </div>
+        <!--contact-->
+        <div class="footer">
+            <div class="about">
+                <img src="assets\icons\logo used in footer.svg" alt="logo" />
+            </div>
+            <!--logo-->
+            <div class="copyright">
+                | &ensp;Copyright &copy; 2020-2021
+                <strong>Zeus System Pvt.Ltd.</strong> All rights reserved
+            </div>
+            <!--copyright-->
+        </div>
+        <!--Footer-->
+    </body>
+</html>

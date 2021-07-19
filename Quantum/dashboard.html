@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Dashboard</title>
+        <link href="/css/dashboard.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <img src="/assets/icons/logo used in header.svg" alt="logo" />
+            </div>
+            <div class="collapse dash">DASHBOARD</div>
+            <div class="collapse">CONTENT</div>
+            <div class="collapse">USERS</div>
+            <div class="collapse">REPORT</div>
+            <div class="collapse">ADMIN</div>
+            <div class="visible">
+                <div class="notifications">
+                    <span class="badge notifications-badge">2</span>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            id="Path_3675"
+                            data-name="Path 3675"
+                            d="M7.58,4.08,6.15,2.65A10.425,10.425,0,0,0,2.03,10.5h2A8.446,8.446,0,0,1,7.58,4.08ZM19.97,10.5h2a10.489,10.489,0,0,0-4.12-7.85L16.43,4.08A8.5,8.5,0,0,1,19.97,10.5ZM18,11c0-3.07-1.64-5.64-4.5-6.32V4a1.5,1.5,0,0,0-3,0v.68C7.63,5.36,6,7.92,6,11v5L4,18v1H20V18l-2-2ZM12,22a1.752,1.752,0,0,0,.4-.04,2.029,2.029,0,0,0,1.44-1.18,2.008,2.008,0,0,0,.15-.78h-4A2.014,2.014,0,0,0,12,22Z"
+                            fill="#3fd28b"
+                        />
+                    </svg>
+
+                    <span class="notifications-panel-outer">
+                        <span class="notifications-panel"></span>
+                        <div class="show-all">SHOW ALL</div>
+                    </span>
+                </div>
+                <div class="alerts">
+                    <span class="badge alerts-badge">1</span>
+                    <svg
+                        class="alerts"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            id="Forma_1"
+                            data-name="Forma 1"
+                            d="M1076.936,181.974a1.242,1.242,0,0,1-.92-.778l-2.513-6.7h-.379a.625.625,0,0,1-.625-.626v-.625h-1.876a.625.625,0,0,1-.625-.625v-3.75a.625.625,0,0,1,.625-.625h1.876v-.626a.625.625,0,0,1,.625-.625h6.228c.217-.01.431-.044.647-.064v7.628c-.214-.021-.427-.054-.642-.064h-1.66l2.1,4.2a1.247,1.247,0,0,1-.229,1.446l-1.5,1.489a1.215,1.215,0,0,1-.879.37A1.25,1.25,0,0,1,1076.936,181.974Zm12.183-2.53c-.019-.009-.033-.025-.052-.036a.6.6,0,0,1-.155-.121c-.006-.007-.015-.01-.021-.016a13.146,13.146,0,0,0-7.642-4.527v-7.988a13.148,13.148,0,0,0,7.642-4.528c.005-.005.013-.006.018-.012a.621.621,0,0,1,.274-.177.461.461,0,0,1,.07-.014.561.561,0,0,1,.122-.025.627.627,0,0,1,.175.035.04.04,0,0,0,.018,0,.042.042,0,0,1,.018,0s.006.006.01.007a.62.62,0,0,1,.262.2.414.414,0,0,1,.04.059.6.6,0,0,1,.1.322v16.249a.6.6,0,0,1-.1.322c-.014.022-.025.039-.04.059a.6.6,0,0,1-.262.2s-.006.006-.01.008a.628.628,0,0,1-.466-.019Z"
+                            transform="translate(-1070 -162)"
+                            fill="#3fd28b"
+                        />
+                    </svg>
+                    <span class="alerts-panel-outer">
+                        <span class="alerts-panel"></span>
+                        <div class="show-all">
+                            <span>SHOW ALL</span> &ensp; | &ensp;
+                            <span>CREATE NEW</span>
+                        </div>
+                    </span>
+                </div>
+                <div>
+                    <span class="badge badge-profile">T</span>
+                    <img
+                        class="profile-pic"
+                        src="/assets/icons/IMG_20210626_231412.jpg"
+                        alt="Profile"
+                    />
+                </div>
+            </div>
+            <div class="invisible">
+                <span class="mobile-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </span>
+                <span class="ham-menu">
+                    <div class="menu-items dash">
+                        <span>DASHBOARD</span>
+                        <span class="expand-arrow"></span>
+                    </div>
+                    <div class="expand">
+                        <span>CONTENT</span>
+                        <span class="expand-arrow"></span>
+                    </div>
+                    <div class="menu-items">
+                        CONTENT
+                        <span class="expand-arrow"></span>
+                    </div>
+                    <div class="expand">
+                        <span>CONTENT</span>
+                        <span class="expand-arrow"></span>
+                    </div>
+                    <div class="menu-items">
+                        USERS
+                        <span class="expand-arrow"></span>
+                    </div>
+                    <div class="expand">
+                        <span>CONTENT</span>
+                        <span class="expand-arrow"></span>
+                    </div>
+                    <div class="menu-items">
+                        REPORT
+                        <span class="expand-arrow"></span>
+                    </div>
+                    <div class="expand">
+                        <span>CONTENT</span>
+                        <span class="expand-arrow"></span>
+                    </div>
+                    <div class="menu-items">
+                        ADMIN
+                        <span class="expand-arrow"></span>
+                    </div>
+                    <div class="expand">
+                        <span>CONTENT</span>
+                        <span class="expand-arrow"></span>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="panel">
+                <div class="course-classes n-courses">
+                    <div>
+                        <img src="/assets/icons/courses.svg" alt="courses" />
+                    </div>
+                    <div class="number">4</div>
+                    <div class="text">Courses</div>
+                </div>
+                <div class="course-classes">
+                    <div>
+                        <img src="/assets/icons/classes.svg" alt="classes" />
+                    </div>
+                    <div class="number">4</div>
+                    <div class="text">Classes</div>
+                </div>
+            </div>
+            <div class="sort">
+                <div class="showing">Showing 4 of 4 courses</div>
+                <div class="sort-by">
+                    <div class="">Sort By:</div>
+                    <select class="" name="course-name">
+                        <option value="Course Name">Course Name</option>
+                    </select>
+                    <div class="sort-svg">
+                        <img src="/assets/icons/sort.svg" alt="sort-arrow" />
+                    </div>
+                </div>
+            </div>
+            <div class="course-table"></div>
+        </div>
+        <!--actual footer start-->
+        <div>
+            <div class="contact">
+                <div class="">About</div>
+                <div class="">|</div>
+                <div class="">Contact Us</div>
+            </div>
+            <div class="footer">
+                <div class="">
+                    <img
+                        src="/assets/icons/logo used in footer.svg"
+                        alt="logo"
+                    />
+                </div>
+                <div class="">|</div>
+                <div class="">
+                    Copyright &copy; 2020-2021
+                    <strong>Zeus System Pvt.Ltd.</strong> All rights reserved
+                </div>
+            </div>
+        </div>
+        <!--actual footer end-->
+
+        <script src="/js/dashboard.js"></script>
+        <script src="/js/notification.js"></script>
+        <script src="/js/alerts.js"></script>
+    </body>
+</html>
+
+<!--
+    <div class="course">
+                    <div class="details">
+                        <img class="course-img" src="/assets/images/imageMask-1.svg" alt="" />
+                        <div class="course-details">
+                            <div class="course-content">
+                                <div class="course-name">Acceleration</div> 
+                            </div>
+                            <div class="favourite">
+                                <img
+                                    src="/assets/icons/favourite.svg"
+                                    alt="favourite"
+                                />
+                            </div>
+                            <div class="sub-grade">
+                                <div class="subjetc">Physics</div>
+                                <div class="">|</div>
+                                <div class="grades">Grade 7 +2</div>
+                            </div>
+                            <div class="units">
+                                <div class="">
+                                    <strong>4</strong> Units <strong>18</strong> Lessons <strong>24</strong> Topics</strong>
+                                </div>
+                            </div>
+                            <div class="classes">
+                                <select name="classes" class="n-classes">
+                                    <option value="mr-frank-b">
+                                        Mr. Frank's Class B
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="student">
+                                <div class="total-students">50 Students</div>
+                                <div class="">|</div>
+                                <div class="duration">21-Jan-2020 - 21-Aug-2020</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="">
+                            <img
+                                src="/assets/icons/preview.svg"
+                                alt="preview"
+                            />
+                        </div>
+                        <div class="">
+                            <img
+                                src="/assets/icons/manage course.svg"
+                                alt="manage"
+                            />
+                        </div>
+                        <div class="">
+                            <img
+                                src="/assets/icons/grade submissions.svg"
+                                alt="grade"
+                            />
+                        </div>
+                        <div class="">
+                            <img
+                                src="/assets/icons/reports.svg"
+                                alt="reports"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="details">
+                        <img class="course-img" src="/assets/images/imageMask-2.svg" alt="" />
+                        <div class="course-details">
+                            <div class="course-content">
+                                <div class="course-name">
+                                    Displacement, Velocity and Speed
+                                </div>  
+                            </div>
+                            <div class="favourite">
+                                <img
+                                    src="/assets/icons/favourite.svg"
+                                    alt="favourite"
+                                />
+                            </div>
+                            <div class="sub-grade">
+                                <div class="">Physics 2</div>
+                                <div class="">|</div>
+                                <div class="">Grade 6 +3</div>
+                            </div>
+                            <div class="units">
+                                <div class="">
+                                    <strong>2</strong> Units <strong>15</strong> Lessons <strong>20</strong> Topics</strong>
+                                </div>
+                            </div>
+                            <div class="classes">
+                                <select name="classes" class="n-classes disabled" >
+                                    <option value="no-class" disabled>
+                                        No Classes
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="student"></div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="">
+                            <img
+                                src="/assets/icons/preview.svg"
+                                alt="preview"
+                            />
+                        </div>
+                        <div class="">
+                            <img
+                                src="/assets/icons/manage course.svg"
+                                alt="manage"
+                            />
+                        </div>
+                        <div class="">
+                            <img
+                                src="/assets/icons/grade submissions.svg"
+                                alt="grade"
+                            />
+                        </div>
+                        <div class="">
+                            <img
+                                src="/assets/icons/reports.svg"
+                                alt="reports"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="details">
+                        <img class="course-img" src="/assets/images/imageMask.svg" alt="" />
+                        <div class="course-details">
+                            <div class="course-content">
+                                <div class="course-name">
+                                    Introduction to Biology: Micro organisms and how the affec..
+                                </div>
+                            </div>
+                            <div class="favourite">
+                                <img
+                                    src="/assets/icons/favourite.svg"
+                                    alt="favourite"
+                                />
+                            </div>
+                            <div class="sub-grade">
+                                <div class="">Biology</div>
+                                <div class="">|</div>
+                                <div class="">Grade 4 +1</div>
+                            </div>
+                            <div class="units">
+                                <div class="">
+                                    <strong>5</strong> Units <strong>16</strong> Lessons <strong>22</strong> Topics</strong>
+                                </div>
+                            </div>
+                            <div class="classes">
+                                <select name="classes" class="n-classes">
+                                    <option value="all-classes" >
+                                        All Classes
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="student">
+                                <div>300 Students</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <div class="">
+                            <img
+                                src="/assets/icons/preview.svg"
+                                alt="preview"
+                            />
+                        </div>
+                        <div class="">
+                            <img
+                                src="/assets/icons/manage course.svg"
+                                alt="manage"
+                            />
+                        </div>
+                        <div class="">
+                            <img
+                                src="/assets/icons/grade submissions.svg"
+                                alt="grade"
+                            />
+                        </div>
+                        <div class="">
+                            <img
+                                src="/assets/icons/reports.svg"
+                                alt="reports"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="details">
+                        <img class="course-img" src="/assets/images/imageMask-3.svg" alt="" />
+                        <div class="course-details">
+                            <div class="course-content">
+                                <div class="course-name">
+                                    Introduction to High School Mathematics
+                                </div>
+                            </div>
+                            <div class="favourite">
+                                    <img
+                                        src="/assets/icons/favourite.svg"
+                                        alt="favourite"
+                                    />
+                                </div>
+                            <div class="sub-grade">
+                                <div class="">Mathematics</div>
+                                <div class="">|</div>
+                                <div class="">Grade 8 +3</div>
+                            </div>
+                            <div class="classes">
+                                <select name="classes" class="n-classes">
+                                    <option value="mr-frank-a" >
+                                        Mr. Frank's Class A
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="student">
+                                <div class="">44 Students</div>
+                                <div class="">|</div>
+                                <div class="">14-Oct-2019 - 20-Oct-2019</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="controls">
+                        <div class="">
+                            <img
+                                src="/assets/icons/preview.svg"
+                                alt="preview"
+                            />
+                        </div>
+                        <div class="">
+                            <img
+                                src="/assets/icons/manage course.svg"
+                                alt="manage"
+                            />
+                        </div>
+                        <div class="">
+                            <img
+                                src="/assets/icons/grade submissions.svg"
+                                alt="grade"
+                            />
+                        </div>
+                        <div class="">
+                            <img
+                                src="/assets/icons/reports.svg"
+                                alt="reports"
+                            />
+                        </div>
+                    </div>
+                </div>
+-->
