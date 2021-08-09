@@ -1,17 +1,15 @@
 -- populating walkin-listing
 
--- add new venue and location
-insert into walk_in_location (
-    location,
-    venue
-)	values
-	(
-    "Mumbai",
-    "Zeus Systems Pvt. Ltd. 1402, 14th Floor, Tower B, Peninsula Business Park. Ganpatrao Kadam Marg Lower Parel (W) Mumbai - 400 013 Phone: +91-22-66600000"
-);
+-- add new location
+insert into location (location)	
+values ("Mumbai");
+
+-- add ne venue
+insert into walk_in_venue(venue)
+values ("Zeus Systems Pvt. Ltd. 1402, 14th Floor, Tower B, Peninsula Business Park. Ganpatrao Kadam Marg Lower Parel (W) Mumbai - 400 013 Phone: +91-22-66600000");
 
 -- Add the prerequisites
-insert into pre_requisites (
+insert into walk_in_pre_requisites (
 	gen_instruction,
     exam_instruction,
     sys_req,
@@ -31,11 +29,12 @@ insert into walk_in (
     end_date,
     expires,
     location_id,
-    pre_requisites_id
+    pre_requisites_id,
+    venue_id
 )	values 
-	("Walk In for Designer Job Role","2021-07-03","2021-07-04",5,1,1),
-    ("Walk In for Multiple Job Roles","2021-07-03","2021-07-04",NULL,1,1),
-    ("Walk In for Design and Development Job Role","2021-07-10","2021-07-11",NULL,1,1);
+	("Walk In for Designer Job Role","2021-07-03","2021-07-04",5,1,1,1),
+    ("Walk In for Multiple Job Roles","2021-07-03","2021-07-04",NULL,1,1,1),
+    ("Walk In for Design and Development Job Role","2021-07-10","2021-07-11",NULL,1,1,1);
     
 
 -- Add roles
@@ -62,7 +61,7 @@ insert into roles (
 	);
  
  -- Which walk-in has what roles available
-insert into roles_available (
+insert into walk_in_roles_available (
 	walk_in_id,
     role_id
 )	values
@@ -82,7 +81,7 @@ insert into time_slots (
     ("13:00:00","15:00:00");
  
 -- which walk_in has what time slots available
-insert into jobs_time_slots (
+insert into walk_in_time_slots (
 	walk_in_id,
     slots_id
 ) values 
@@ -94,13 +93,83 @@ insert into jobs_time_slots (
 (3,2);
 
 --  add qualifications
-insert into qualification (name)
-values ("MCA")
+insert into qualification_title (name)
+values ("MCA");
 
 -- add internship
 insert into intership_for (
 	walk_in_walk_in_id,
     qualification_qualification_id
 )	values 
-	(2,1)
+	(2,1);
+    
+-- add user_referral
+insert into user_referral(employee_name)
+values("bhushan");
+    
+-- Add user
+insert into user_info (
+	user_id,
+	email,
+    firstname,
+    lastname,
+    img_path,
+    contact,
+    portfolio,
+    resume_path,
+    sub_opt,
+    referral_id
+) values (
+	1,
+	"testing@walk.in",
+    "suraj",
+    "balvanshi",
+    "/profile.pic",
+    "9892707429",-- 
+    "/portfolio.url",
+    "/resume.pdf",
+    1,
+    1
+);
+
+--  add user profession
+insert into user_professional (
+	bfresher,
+    years_of_exp,
+    current_ctc,
+    expected_ctc,
+    notice_date,
+    notice_period,
+    bapplied_recently,
+    user_id
+) values (
+	1,
+    5,
+    500000,
+    700000,
+    "2021/01/01",
+    5,
+    0,
+    1    
+);
+
+-- add technologies
+insert into tech (name) 
+values
+	("Javascript"),
+    ("Angular JS"),
+    ("React"),
+    ("Node JS"),
+    ("Other");
+
+-- add tech familiar
+insert into user_tech_familiar (user_id,tech_id)
+values (1,1);
+
+-- add tech expertise
+insert into user_tech_expertise (user_id,tech_id)
+values (1,1);
+
+
+
 
